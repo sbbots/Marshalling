@@ -25,7 +25,7 @@ public class TestMarshalling {
 			
 			// Generating the schema output
 			SchemaOutputResolver outputResolver = new MySchemaOutput();
-			outputResolver.createOutput("", "/Users/Maansy/Documents/workspace/Marshalling/src/main/java/com/sbbots/marshalling/type.xsd");
+			outputResolver.createOutput("", "../workspace/Marshalling/src/main/java/com/sbbots/marshalling/type.xsd");
 			jb.generateSchema(outputResolver);
 			
 			//Marshalling
@@ -36,7 +36,7 @@ public class TestMarshalling {
 			t.setValue("Value");
 
 			m.marshal(t, new File(
-					"/Users/Maansy/Documents/workspace/Marshalling/src/main/java/com/sbbots/marshalling/type.xml"));
+					"../workspace/Marshalling/src/main/java/com/sbbots/marshalling/type.xml"));
 
 		} catch (JAXBException e) {
 			// TODO Auto-generated catch block

@@ -21,7 +21,7 @@ public class TestUnmarshalling {
 			Unmarshaller m = jb.createUnmarshaller();
 
 			XMLType xml = (XMLType) m.unmarshal(new File(
-					"/Users/Maansy/Documents/workspace/Marshalling/src/main/java/com/sbbots/marshalling/type.xml"));
+					"../workspace/Marshalling/src/main/java/com/sbbots/marshalling/type.xml"));
 			System.out.println(xml.getName());
 			System.out.println(xml.getValue());
 
